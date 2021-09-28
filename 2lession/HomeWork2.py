@@ -82,7 +82,7 @@ def get_report(workers: list) -> dict:
     return report
 
 
-def show_hierarchy(report: dict)->dict:
+def show_hierarchy(report: dict):
     """
     Отображает иерархию департаментов и отделов в компании
 
@@ -161,7 +161,7 @@ def report_to_csv(report: dict):
 def main():
     """
     Главный метод программы, является интерфейсом пользователя
-    
+
     """
     print('ООО "Рога и Копыта" \n')
     options = {1: show_hierarchy, 2: show_report, 3:report_to_csv}
