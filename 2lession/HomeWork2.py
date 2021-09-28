@@ -113,7 +113,7 @@ def show_hierarchy(report: dict):
 
 
 
-def show_report(report: dict) -> dict:
+def show_report(report: dict):
     """
     Отображает сводный отчёт по департаментам: название, численность, "вилка" зарплат в виде мин – макс, среднюю зарплату
 
