@@ -24,7 +24,7 @@ class CountVectorizer:
         param:
         - corpus (list): text data list
         return:
-        - tokenize (list): term-document matrix, based on input corpus of text data
+        - term_matrix (list): term-document matrix, based on input corpus of text data
         """
         from collections import Counter
         total_text_counters = []
