@@ -61,8 +61,8 @@ def main():
     ]
 
     X = vectorizer.fit_transform(corpus)
-    # assert X = ['ingredients', 'fresh', 'boil', 'to', 'pasta', 'pomodoro', 'pot', 'crock', 'parmesan', 'never', 'taste', 'again']
-    # assert vectorizer.get_feature_name() = [[0, 0, 1, 0, 2, 0, 1, 1, 0, 1, 0, 1], [1, 1, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0]]
+    # assert X = [[1, 1, 2, 1, 1, 1, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1]]
+    # assert vectorizer.get_feature_name() = ['crock', 'pot', 'pasta', 'never', 'boil', 'again', 'pomodoro', 'fresh', 'ingredients', 'parmesan', 'to', 'taste']
     print(X)
     print(vectorizer.get_feature_name())
 
