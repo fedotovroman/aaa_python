@@ -40,9 +40,7 @@ class CountVectorizer:
                     self._corp_vocab.append(word)
 
 
-        term_matrix = [[text_counter.get(word_from_vocab,0)
-            for word_from_vocab in self._corp_vocab]
-                for text_counter in total_text_counters]
+        term_matrix = [[text_counter.get(word_from_vocab,0) for word_from_vocab in self._corp_vocab] for text_counter in total_text_counters]
 
         return term_matrix
 
