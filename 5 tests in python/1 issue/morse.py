@@ -33,18 +33,16 @@ def encode(message: str) -> str:
     >>> encode('MAI-PYTHON-2019')
     '-- .- .. -....- .--. -.-- - .... --- -. -....- ..--- ----- .---- ----.'
 
-    >>> encode('HELLO-FROM-ACADEMY')
-    '.... . .-.. .-.. --- -....- ..-. .-. --- -- -....- .- -.-. .- -.. . -- -.--'
+    >>> encode('HELLO-FROM-ACADEMY') #doctest: +NORMALIZE_WHITESPACE
+    '.... . .-.. .-.. --- -....- ..-. .-.      --- -- -....- .- -.-. .- -.. . -- -.--'
 
     >>> encode('SOS')
     '... --- ...'
 
-    >>> encode('Привет-из-академии!') # doctest: +IGNORE_EXCEPTION_DETAIL
+    >>> encode('Привет-из-академии!')
     Traceback (most recent call last):
     KeyError:
 
-    >>> encode('WINTER2021') # doctest: +ELLIPSIS
-    '.--...'
 
     """
     encoded_signs = [

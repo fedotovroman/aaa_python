@@ -1,8 +1,9 @@
-Console command: C:\Users\Roman>python "C:\Users\Roman\Documents\GitHub\aaa_python\5 tests in python\1 issue\morse.py"
+Console command: python -m doctest -o IGNORE_EXCEPTION_DETAIL "C:\Users\Roman\Documents\GitHub\aaa_python\5 tests in python\1 issue\morse.py"
 Result: 
 
 
-Console command: C:\Users\Roman>python "C:\Users\Roman\Documents\GitHub\aaa_python\5 tests in python\1 issue\morse.py" -v
+Console command: python -m doctest -o IGNORE_EXCEPTION_DETAIL "C:\Users\Roman\Documents\GitHub\aaa_python\5 tests in python\1 issue\morse.py" -v
+
 Result: 
 
 Trying:
@@ -11,9 +12,9 @@ Expecting:
     '-- .- .. -....- .--. -.-- - .... --- -. -....- ..--- ----- .---- ----.'
 ok
 Trying:
-    encode('HELLO-FROM-ACADEMY')
+    encode('HELLO-FROM-ACADEMY') #doctest: +NORMALIZE_WHITESPACE
 Expecting:
-    '.... . .-.. .-.. --- -....- ..-. .-. --- -- -....- .- -.-. .- -.. . -- -.--'
+    '.... . .-.. .-.. --- -....- ..-. .-.      --- -- -....- .- -.-. .- -.. . -- -.--'
 ok
 Trying:
     encode('SOS')
@@ -21,21 +22,15 @@ Expecting:
     '... --- ...'
 ok
 Trying:
-    encode('Привет-из-академии!') # doctest: +IGNORE_EXCEPTION_DETAIL
+    encode('Привет-из-академии!')
 Expecting:
     Traceback (most recent call last):
     KeyError:
 ok
-Trying:
-    encode('WINTER2021') # doctest: +ELLIPSIS
-Expecting:
-    '.--...'
-ok
 1 items had no tests:
-    __main__
+    morse
 1 items passed all tests:
-   5 tests in __main__.encode
-5 tests in 2 items.
-5 passed and 0 failed.
+   4 tests in morse.encode
+4 tests in 2 items.
+4 passed and 0 failed.
 Test passed.
-
