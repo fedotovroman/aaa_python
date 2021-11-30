@@ -25,6 +25,9 @@ def encode(message: str) -> str:
     """
     Кодирует строку в соответсвие с таблицей азбуки Морзе
 
+    Test description: This test verifies the operation of the method for
+    decoding string expressions from Morse code to English.
+
     doctests:
 
     >>> encode('MAI-PYTHON-2019')
