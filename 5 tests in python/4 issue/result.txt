@@ -1,0 +1,9 @@
+C:\Users\Roman>pytest  "C:\Users\Roman\Documents\GitHub\aaa_python\5 tests in python\4 issue\one_hot_encoder_test.py"
+================================================= test session starts =================================================
+platform win32 -- Python 3.9.6, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
+rootdir: C:\Users\Roman
+collected 4 items
+
+Documents\GitHub\aaa_python\5 tests in python\4 issue\one_hot_encoder_test.py ....                               [100%]
+
+================================================== 4 passed in 0.02s ==================================================
