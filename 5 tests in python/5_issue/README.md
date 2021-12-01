@@ -1,6 +1,7 @@
 Домашняя работа по Python: unittest with mock, 5 issue. Инструкция к запуску тестирования
 ==============================
 Отчет к покрытию лежит в папке htmlcov, index.html
+https://htmlpreview.github.io/?https://github.com/fedotovroman/aaa_python/blob/main/5%20tests%20in%20python/5_issue/htmlcov/index.html
 1. Откройте консоль (cmd).
 2. Перейдите в директорию проекта (cd directory) и выполните: python what_is_year_now_test.py -v
 3. В случае прохождения всех тестов будет выведено: 
