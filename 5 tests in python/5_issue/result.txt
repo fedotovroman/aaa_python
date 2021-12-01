@@ -1,0 +1,13 @@
+Console: C:\Users\Roman>python "C:\Users\Roman\Documents\GitHub\aaa_python\5 tests in python\5_issue\what_is_year_now_test.py" -v
+Result:
+
+test_first_type_data (__main__.Test_what_is_year_now)
+checks the correctness of execution in the case of the format ymd ... ok
+test_second_type_data (__main__.Test_what_is_year_now)
+checks the correctness of execution in the case of the format dmy ... ok
+test_value_error (__main__.Test_what_is_year_now) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+OK

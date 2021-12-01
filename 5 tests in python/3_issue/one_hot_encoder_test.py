@@ -8,8 +8,10 @@ class TestFT(unittest.TestCase):
         checks if the method works correctly if all arguments are different.
         """
         actual = fit_transform(['Alpha', 'Beta', 'Gamma', 'Delta'])
-        expected = [('Alpha', [0, 0, 0, 1]), ('Beta', [0, 0, 1, 0]),
-                        ('Gamma', [0, 1, 0, 0]), ('Delta', [1, 0, 0, 0])]
+        expected = [('Alpha', [0, 0, 0, 1]),
+                    ('Beta', [0, 0, 1, 0]),
+                    ('Gamma', [0, 1, 0, 0]),
+                    ('Delta', [1, 0, 0, 0])]
         self.assertEqual(actual, expected)
 
     def test_some_features_are_equal(self):
@@ -17,7 +19,10 @@ class TestFT(unittest.TestCase):
         checks if the method works correctly if there are identical arguments.
         """
         actual = fit_transform(['Alpha', 'Alpha', 'Alpha', 'Delta'])
-        expected = [('Alpha', [0, 1]), ('Alpha', [0, 1]), ('Alpha', [0, 1]), ('Delta', [1, 0])]
+        expected = [('Alpha', [0, 1]),
+                    ('Alpha', [0, 1]),
+                    ('Alpha', [0, 1]),
+                    ('Delta', [1, 0])]
         self.assertEqual(actual, expected)
 
     def test_ft_returns_list(self):
