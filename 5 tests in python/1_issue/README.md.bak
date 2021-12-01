@@ -2,7 +2,7 @@
 ==============================
 1. Откройте консоль (cmd).
 2. Перейдите в директорию проекта (cd directory) и выполните:
-	python -m doctest -o IGNORE_EXCEPTION_DETAIL morse.py -v
+	C:\Users\Roman>python -m doctest -o IGNORE_EXCEPTION_DETAIL morse.py -v
 3. В случае прохождения всех тестов будет выведено: 
 ```
 Trying:
