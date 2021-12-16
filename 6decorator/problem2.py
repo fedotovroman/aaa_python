@@ -5,10 +5,11 @@ def timed_output(function):
   def wrapper(some_text):
     current_datetime = str(datetime.now().replace(microsecond=0))
     sys.stdout.write(f'[{current_datetime}]: ')
-    function(some_text)
+    ret = function(some_text)
+    return ret
   return wrapper
 
-@timed_output
+#@timed_output
 def print_greeting(name):
     print(f'Hello, {name}!')
 

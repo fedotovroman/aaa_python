@@ -6,10 +6,11 @@ def redirect_output(filepath):
             old_stdout = sys.stdout
             buffer = io.StringIO()
             sys.stdout = buffer
-            func(*args, **kwargs)
+            ret = func(*args, **kwargs)
             with open(filepath, 'w') as output:
                 output.write(sys.stdout.getvalue())
             sys.stdout = old_stdout
+            return ret
         return wrapper
     return decorator
 

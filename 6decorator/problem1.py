@@ -2,7 +2,6 @@ import sys
 from datetime import datetime
 
 original_write = sys.stdout.write
-x = []
 
 def my_write(some_text):
     current_datetime = str(datetime.now().replace(microsecond=0))
