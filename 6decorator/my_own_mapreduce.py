@@ -28,8 +28,8 @@ class Seq:
 def main():
     numbers = [1, 2, 3, 4, 5]
     seq = Seq(numbers)
-    res = seq.filter(lambda n: n % 2 == 0).map(lambda n: n + 10).take(3)
-    assert res == [12, 14]
+    res = seq.filter(lambda n: n % 2 == 0).take(3)
+    assert res == [2, 4]
 
 if __name__ == '__main__':
     main()
